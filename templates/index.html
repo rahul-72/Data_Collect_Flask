@@ -18,7 +18,7 @@
 {% block center %}
 
 <div id="entry" >
-    <form action="/success/" method="POST">
+    <form action="/submit/" method="POST">
         <p>Name &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
             &nbsp; &nbsp; &nbsp; &nbsp; : <input type="text" 
             name='name' required>
@@ -48,12 +48,8 @@
         <p>Batch_Date &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
             &nbsp; &nbsp; &nbsp; &nbsp; : <input type="date" 
             name='batchdate' required>
-        </p>
-        <p>
-            <button>
-                <a href="/submit/" >Submit</a>
-            </button>
-        </p>
+        
+        <p><input type="submit" value="Submit"> </p>
 
 
 

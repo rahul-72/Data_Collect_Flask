@@ -8,7 +8,7 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/submit/',methods=['post'])
+@app.route('/submit/',methods=["POST"])
 def submit():
     name=request.form['name']
     course=request.form['language']
