@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% block left %}
+
+<img src="static/image/image1" alt="Image" width="500" height="500">
+
+{% endblock %}
+
+{% block right %}
+
+<video width="320" height="240" controls>
+    <source src="static/video/video1" type="video/mp4">
+  Your browser does not support the video tag.
+  </video>
+
+{% endblock %}
+
+{% block center %}
+
+<div id="entry" >
+    <form action="/success/" method="POST">
+        <p>Name &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; : <input type="text" 
+            name='name' required>
+        </p>
+        <p>Course &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; : 
+            <select name="language" placeholder='language'>
+                 <option>Python</option>
+                 <option>Data Science</option>
+                 <option>Devops</option>
+                 <option>Cloud Computing</option>
+                 <option>Linux</option>
+            </select>
+        </p>
+        <p>E-mail &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; : <input type="text" 
+            name='email' required>
+        </p>
+        <p>Phone-Number &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; : <input type="number" 
+            name='ph_no' required>
+        </p>
+        <p>College-Name &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; : <input type="text" 
+            name='collegename' required>
+        </p>
+        <p>Batch_Date &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; : <input type="date" 
+            name='batchdate' required>
+        </p>
+        <p>
+            <button>
+                <a href="/submit/" >Submit</a>
+            </button>
+        </p>
+
+
+
+
+
+
+    </form>
+</div>
+
+{% endblock %}
